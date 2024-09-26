@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Podstawy JS</h1>
+    </header>
+    
+    <Script>
+        document.write('Siema<br>')
+        const number1 = parseInt(prompt('wypisz pierwszą liczbę:'))
+        const number2 = parseInt(prompt('wypisz drugą liczbę:'))
+        const operantor = prompt('Wypisz znak działania: | + | - | * | /')
+        if ( isNaN(number1) || isNaN(number2)) {
+            document.write('</p>BŁAD: Któraś z wartości nie jst liczbą.</p>')
+        }
+        else{
+        switch (operantor) {
+            case '+':
+                document.write('<p>Wynik dodawania: ',number1+number2,'</p>')
+                break;
+            case '-':
+                document.write('<p>Wynik odejmowania: ',number1-number2,'</p>')
+                break;
+            case '*':
+                document.write('<p>Wynik mnożenia: ',number1*number2,'</p>')
+                break;
+            case '/':
+                if (number2 !=0) {
+                    document.write('<p>Wynik dzielenia: ',number1/number2,'</p>')
+                    break;
+                }
+                else
+                {
+                    document.write('<p>BŁAD: Nie można dzielić przez 0.</p>')
+                }
+                break;
+            default:
+                document.write('</p>BŁAD: Błędna wartość operacji.</p>')
+                break;
+        }
+        }
+    </Script>
+</body>
+</html>
