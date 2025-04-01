@@ -114,6 +114,143 @@ Added index.html
             <button type="submit" class="btn btn-primary">Zapisz dane</button>
           </div>
         </form>
+
+
+
+
+
+        <!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dziennik praktyki zawodowej</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #1e1e1e;
+        color: white;
+      }
+      .container {
+        background-color: #2a2a2a;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 50px;
+      }
+      .btn-custom {
+        background-color: #4caf50;
+        color: white;
+      }
+      .text-hover {
+            transition: transform 0.3s ease-in-out;
+            display: inline-block; /* Zapobiega przesuwaniu sąsiednich elementów */
+        }
+
+        .text-hover:hover {
+            transform: scale(1.2);
+            color: aliceblue;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="mb-4">Dziennik praktyki zawodowej</h2>
+      <ul
+        class="nav nav-pills nav-fill gap-2 p-1 m-4 small bg-success rounded-5 shadow-sm"
+        id="pillNav2"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-success);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="text-hover nav-link rounded-5"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+          >
+            Metryczka
+          </button>
+        </li>
+        <li class="text-hover nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            Dziennik zajęć
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="text-hover nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            Podsumowanie
+          </button>
+        </li>
+      </ul>
+
+      <div class="border border-success p-3 rounded">
+        <h3 class="mb-3">Wprowadź dane ucznia i praktyki</h4>
+        <form>
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Imię" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nazwisko" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Klasa" />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Rok szkolny"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Odbytej w" />
+          </div>
+          <div class="border p-3 rounded">
+            <label class="form-label">Czas trwania praktyki</label>
+            <div class="row">
+              <div class="col">
+                <input type="date" class="form-control" />
+              </div>
+              <div class="col">
+                <input type="date" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-custom mt-3">Zatwierdź</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
       </div>
     </div>
   </body>
